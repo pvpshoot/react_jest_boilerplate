@@ -1,38 +1,17 @@
 import React from 'react';
-import { mount, shallow } from 'enzyme';
+import { mount } from 'enzyme';
 
-import Tabs from '../src/components/Tabs';
+import App from '../src/components/App';
 
 describe('Tabs', () => {
-  it('renders', () => {
-    const wrapper = shallow(<Tabs />);
-    expect(wrapper).toMatchSnapshot();
-  });
-
   it('select tab', () => {
-    const wrapper = mount(<Tabs />);
-    wrapper
-      .find('Tab')
-      .at(2)
-      .simulate('click');
-    expect(wrapper).toMatchSnapshot();
-  });
+    const wrapper = mount(<App />);
+    const tabContentsList = wrapper.find('[data-test="tab-content"]');
+    const tabAnchorList = wrapper.find('[data-test="tab-anchor"]');
+    const tabAnchor = tabAnchorList.at(2);
+    const tabContent = tabContentsList.at(2);
 
-  it('use default selected tab', () => {
-    const wrapper = mount(<Tabs default={3} />);
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  it('not react on disables tab', () => {
-    const wrapper = mount(<Tabs />);
-
-    wrapper.find({ disabled: true }).simulate('click');
-    expect(wrapper).toMatchSnapshot();
-
-    wrapper
-      .find('Tab')
-      .at(0)
-      .simulate('click');
-    expect(wrapper).toMatchSnapshot();
+    tabAnchor.simulate('click');
+    expect(tabContent.render()).toMatchSnapshot();
   });
 });
