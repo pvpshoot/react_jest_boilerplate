@@ -4,7 +4,7 @@ extends:
 env:
   jest: true
 rules:
-  import/extensions: 'off'
-  react/jsx-filename-extension: 'off'
   react/prop-types: 'off'
   react/prefer-stateless-function: 'off'
+globals:
+  document: true
