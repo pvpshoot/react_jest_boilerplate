@@ -22,23 +22,23 @@ exports[`Tabs select tab 1`] = `
       <li
         aria-controls="react-tabs-1"
         aria-disabled="false"
-        aria-selected="false"
-        class="react-tabs__tab"
+        aria-selected="true"
+        class="react-tabs__tab react-tabs__tab--selected"
         data-test="tab-anchor"
         id="react-tabs-0"
         role="tab"
+        tabindex="0"
       >
         Tab 1
       </li>
       <li
         aria-controls="react-tabs-3"
         aria-disabled="false"
-        aria-selected="true"
-        class="react-tabs__tab react-tabs__tab--selected"
+        aria-selected="false"
+        class="react-tabs__tab"
         data-test="tab-anchor"
         id="react-tabs-2"
         role="tab"
-        tabindex="0"
       >
         Tab 2
       </li>
@@ -56,25 +56,25 @@ exports[`Tabs select tab 1`] = `
     </ul>
     <div
       aria-labelledby="react-tabs-0"
-      class="react-tabs__tab-panel"
+      class="react-tabs__tab-panel react-tabs__tab-panel--selected"
       data-test="tab-content"
       id="react-tabs-1"
       role="tabpanel"
-    />
-    <div
-      aria-labelledby="react-tabs-2"
-      class="react-tabs__tab-panel react-tabs__tab-panel--selected"
-      data-test="tab-content"
-      id="react-tabs-3"
-      role="tabpanel"
     >
-      Content 2
+      Content 1
       <button
         type="button"
       >
         remove this tab
       </button>
     </div>
+    <div
+      aria-labelledby="react-tabs-2"
+      class="react-tabs__tab-panel"
+      data-test="tab-content"
+      id="react-tabs-3"
+      role="tabpanel"
+    />
     <div
       aria-labelledby="react-tabs-4"
       class="react-tabs__tab-panel"

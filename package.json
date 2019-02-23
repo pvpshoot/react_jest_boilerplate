@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:debug": "DEBUG=setState: node --inspect-brk node_modules/.bin/jest --runInBand",
     "start": "webpack-dev-server --mode development --hot",
     "lint": "eslint ./src/",
     "build": "npm test && webpack --mode production"
