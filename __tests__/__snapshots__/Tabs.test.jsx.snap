@@ -6,6 +6,7 @@ exports[`Tabs select tab 1`] = `
     My React App!
   </h1>
   <button
+    data-test="tab-add-button"
     type="button"
   >
     Add tab
@@ -63,6 +64,7 @@ exports[`Tabs select tab 1`] = `
     >
       Content 1
       <button
+        data-test="tab-remove-button"
         type="button"
       >
         remove this tab
@@ -92,6 +94,7 @@ exports[`Tabs select tab 2`] = `
     My React App!
   </h1>
   <button
+    data-test="tab-add-button"
     type="button"
   >
     Add tab
@@ -156,6 +159,7 @@ exports[`Tabs select tab 2`] = `
     >
       Content 2
       <button
+        data-test="tab-remove-button"
         type="button"
       >
         remove this tab

@@ -53,7 +53,7 @@ class Tabs extends React.Component {
   ));
 
   renderRemoveButton = uid => (
-    <button type="button" onClick={() => this.removeTab(uid)}>
+    <button type="button" onClick={() => this.removeTab(uid)} data-test="tab-remove-button">
       remove this tab
     </button>
   );
@@ -62,7 +62,7 @@ class Tabs extends React.Component {
     const { tabs } = this.state;
     return (
       <>
-        <button type="button" onClick={this.addTab}>
+        <button type="button" onClick={this.addTab} data-test="tab-add-button">
           Add tab
         </button>
         <TabsContainer data-test="tab-container">
