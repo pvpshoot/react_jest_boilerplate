@@ -45,23 +45,13 @@ describe('Tabs', () => {
     expect(s.getLastAnchor()).toMatchSelector(TAB_AREA_SELECTED_SELECTOR);
   });
 
-  it('save selected tab after reload', () => {
-    const TEST_INDEX = 2;
-    const wrapper = mount(<App />);
-    const s = createSelector(wrapper);
-    const tabAnchor = s.getNthAnchor(TEST_INDEX);
-    Cookie.get.mockImplementation(() => TEST_INDEX);
-
-    tabAnchor.simulate('click');
-    expect(Cookie.set).toHaveBeenCalledWith('tabIndex', TEST_INDEX);
-  });
-
   it('reload with saved tab selected', () => {
     const TEST_INDEX = 2;
+    Cookie.get.mockImplementation(() => TEST_INDEX);
+
     const wrapper = mount(<App />);
     const s = createSelector(wrapper);
 
-    Cookie.get.mockImplementation(() => TEST_INDEX);
     expect(s.getNthAnchor(TEST_INDEX)).toMatchSelector(TAB_AREA_SELECTED_SELECTOR);
   });
 
