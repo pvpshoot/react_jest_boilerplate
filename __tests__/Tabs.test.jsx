@@ -32,7 +32,7 @@ describe('Tabs', () => {
     const addButton = getAddButton(wrapper);
 
     addButton.simulate('click');
-    expect(getAnchorList(wrapper).last()).not.toMatchSelector(TAB_AREA_SELECTED_SELECTOR);
+    expect(getAnchorList(wrapper).last()).toMatchSelector(TAB_AREA_SELECTED_SELECTOR);
   });
 
   it('remove tab', () => {

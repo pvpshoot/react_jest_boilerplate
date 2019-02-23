@@ -9,10 +9,13 @@ import 'react-tabs/style/react-tabs.css';
 import nanoid from 'nanoid';
 import * as R from 'ramda';
 
+import patchSetState from '../../utils/patchSetState';
+
 class Tabs extends React.Component {
   constructor(props) {
     super(props);
     this.handleRemoveTab = R.curryN(2, this.handleRemoveTab);
+    patchSetState(this);
   }
 
   state = {
