@@ -6,6 +6,7 @@ import {
   Tabs as TabsContainer,
 } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import Cookies from 'js-cookie';
 import nanoid from 'nanoid';
 import * as R from 'ramda';
 
@@ -15,16 +16,27 @@ class Tabs extends React.Component {
   constructor(props) {
     super(props);
     this.handleRemoveTab = R.curryN(2, this.handleRemoveTab);
+
     patchSetState(this);
+
+    this.state = {
+      tabIndex: this.getSavedIndex(),
+      tabs: [
+        { title: 'Tab 1', content: 'Content 1', uid: nanoid() },
+        { title: 'Tab 2', content: 'Content 2', uid: nanoid() },
+        { title: 'Tab 3', content: 'Content 3', uid: nanoid() },
+      ],
+    };
   }
 
-  state = {
-    tabIndex: 1,
-    tabs: [
-      { title: 'Tab 1', content: 'Content 1', uid: nanoid() },
-      { title: 'Tab 2', content: 'Content 2', uid: nanoid() },
-      { title: 'Tab 3', content: 'Content 3', uid: nanoid() },
-    ],
+  getSavedIndex = () => {
+    const tabIndex = Cookies.get('tabIndex');
+    if (R.isNil(tabIndex)) return 1;
+    return parseInt(tabIndex, 10);
+  };
+
+  setSavedIndex = (index) => {
+    Cookies.set('tabIndex', Math.min(index, this.state.tabs.length - 1));
   };
 
   makeTab = (index) => {
@@ -56,6 +68,7 @@ class Tabs extends React.Component {
 
   setActiveTab = (tabIndex) => {
     this.setState({ tabIndex });
+    this.setSavedIndex(tabIndex);
   };
 
   handleTabSelect = (tabIndex) => {
