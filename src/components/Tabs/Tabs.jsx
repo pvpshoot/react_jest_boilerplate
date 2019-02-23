@@ -7,9 +7,16 @@ import {
 } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import nanoid from 'nanoid';
+import * as R from 'ramda';
 
 class Tabs extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleRemoveTab = R.curryN(2, this.handleRemoveTab);
+  }
+
   state = {
+    tabIndex: 1,
     tabs: [
       { title: 'Tab 1', content: 'Content 1', uid: nanoid() },
       { title: 'Tab 2', content: 'Content 2', uid: nanoid() },
@@ -26,10 +33,15 @@ class Tabs extends React.Component {
     const { tabs } = this.state;
     const tabsCount = tabs.length;
     const newTab = this.makeTab(tabsCount);
-    this.setState(state => ({
-      ...state,
-      tabs: [...state.tabs, newTab],
-    }));
+    this.setState(
+      state => ({
+        ...state,
+        tabs: [...state.tabs, newTab],
+      }),
+      () => {
+        this.setActiveTab(tabsCount);
+      },
+    );
   };
 
   removeTab = (uid) => {
@@ -37,6 +49,22 @@ class Tabs extends React.Component {
       ...state,
       tabs: state.tabs.filter(tab => tab.uid !== uid),
     }));
+  };
+
+  setActiveTab = (tabIndex) => {
+    this.setState({ tabIndex });
+  };
+
+  handleTabSelect = (tabIndex) => {
+    this.setActiveTab(tabIndex);
+  };
+
+  handleAddTab = () => {
+    this.addTab();
+  };
+
+  handleRemoveTab = (uid) => {
+    this.removeTab(uid);
   };
 
   renderTabAnchors = tabs => tabs.map(({ title, uid }) => (
@@ -53,19 +81,23 @@ class Tabs extends React.Component {
   ));
 
   renderRemoveButton = uid => (
-    <button type="button" onClick={() => this.removeTab(uid)} data-test="tab-remove-button">
+    <button type="button" onClick={this.handleRemoveTab(uid)} data-test="tab-remove-button">
       remove this tab
     </button>
   );
 
   render() {
-    const { tabs } = this.state;
+    const { tabs, tabIndex } = this.state;
     return (
       <>
-        <button type="button" onClick={this.addTab} data-test="tab-add-button">
+        <button type="button" onClick={this.handleAddTab} data-test="tab-add-button">
           Add tab
         </button>
-        <TabsContainer data-test="tab-container">
+        <TabsContainer
+          data-test="tab-container"
+          selectedIndex={tabIndex}
+          onSelect={this.handleTabSelect}
+        >
           <TabList>{this.renderTabAnchors(tabs)}</TabList>
           {this.renderTabContents(tabs)}
         </TabsContainer>
