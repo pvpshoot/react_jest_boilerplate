@@ -8,7 +8,7 @@ import {
 import 'react-tabs/style/react-tabs.css';
 import nanoid from 'nanoid';
 
-export default class Tabs extends React.Component {
+class Tabs extends React.Component {
   state = {
     tabs: [
       { title: 'Tab 1', content: 'Content 1', uid: nanoid() },
@@ -73,3 +73,5 @@ export default class Tabs extends React.Component {
     );
   }
 }
+
+export default Tabs;

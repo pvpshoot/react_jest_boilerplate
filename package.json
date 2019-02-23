@@ -64,6 +64,7 @@
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.3.3",
     "classnames": "^2.2.6",
+    "debug": "^4.1.1",
     "nanoid": "^2.0.1",
     "ramda": "^0.26.1",
     "rc-dialog": "^7.3.0",
