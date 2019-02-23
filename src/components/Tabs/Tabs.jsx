@@ -98,7 +98,7 @@ class Tabs extends React.Component {
           selectedIndex={tabIndex}
           onSelect={this.handleTabSelect}
         >
-          <TabList>{this.renderTabAnchors(tabs)}</TabList>
+          <TabList data-test="tab-anchor-container">{this.renderTabAnchors(tabs)}</TabList>
           {this.renderTabContents(tabs)}
         </TabsContainer>
       </>
