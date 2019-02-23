@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 
-import Tabs from '..';
+import Tabs from '../src/components/Tabs';
 
 describe('Tabs', () => {
   it('renders', () => {
