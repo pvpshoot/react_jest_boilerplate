@@ -22,6 +22,7 @@ const createSelector = wrapper => ({
   getNavContainer: () => wrapper.find(TAB_NAV_CONTAINER_SELECTOR),
   getFirstNavContainer: () => wrapper.find(TAB_NAV_CONTAINER_SELECTOR).first(),
   getContentList: () => wrapper.find(TAB_CONTENT_SELECTOR),
+  reloadApp: () => wrapper.unmount().mount(),
 });
 
 describe('Tabs', () => {
@@ -33,7 +34,7 @@ describe('Tabs', () => {
     const tabAnchor = tabAnchorList.at(TEST_INDEX);
 
     tabAnchor.simulate('click');
-    expect(s.getAnchorList().at(TEST_INDEX)).toMatchSelector(TAB_AREA_SELECTED_SELECTOR);
+    expect(s.getNthAnchor(TEST_INDEX)).toMatchSelector(TAB_AREA_SELECTED_SELECTOR);
   });
 
   it('add tab', () => {
@@ -53,6 +54,10 @@ describe('Tabs', () => {
     const s = createSelector(wrapper);
 
     expect(s.getNthAnchor(TEST_INDEX)).toMatchSelector(TAB_AREA_SELECTED_SELECTOR);
+
+    Cookie.get.mockImplementation(() => TEST_INDEX - 1);
+    s.reloadApp();
+    expect(s.getNthAnchor(TEST_INDEX - 1)).toMatchSelector(TAB_AREA_SELECTED_SELECTOR);
   });
 
   it('remove tab', () => {

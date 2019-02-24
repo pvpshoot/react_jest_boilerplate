@@ -36,8 +36,7 @@ class Tabs extends React.Component {
   };
 
   setSavedIndex = (index) => {
-    const { tabs } = this.state;
-    Cookies.set('tabIndex', Math.min(index, tabs.length - 1));
+    Cookies.set('tabIndex', Math.min(index, 3));
   };
 
   makeTab = (index) => {
