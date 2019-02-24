@@ -59,6 +59,8 @@ describe('Tabs', () => {
     const mockUrl = 'https://habr.com/ru/';
     const fixture = fs.readFileSync('__fixtures__/rss.xml', 'utf-8');
     const delayResponseTime = 2000;
+    const parsedFixture = await rssService.parse(fixture);
+    const items = rssService.items(parsedFixture);
     nock(`${CORS_PROXY}`)
       .defaultReplyHeaders({ 'access-control-allow-origin': '*' })
       .get(`/?${mockUrl}`)
@@ -80,10 +82,7 @@ describe('Tabs', () => {
     expect(s.getRssSubmitButton()).toHaveProp('disabled', true);
     await delay(delayResponseTime);
     wrapper.update();
-    expect(s.getRssSubmitButton()).toHaveProp('disabled', false);
 
-    const parsedFixture = await rssService.parse(fixture);
-    const items = rssService.items(parsedFixture);
     items.forEach((item, index) => {
       expect(s.getNthContentListItemItem(index)).toHaveText(rssService.itemTitle(item));
     });
