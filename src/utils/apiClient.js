@@ -1,13 +1,11 @@
-import axios from 'axios';
-import * as R from 'ramda';
+import Parser from 'rss-parser';
 
-import beautify from 'xml-beautifier';
+const parser = new Parser();
+
+export const CORS_PROXY = 'https://cors.io/';
 
 export default {
   getRssFeed(url) {
-    return axios
-      .get(`https://cors-anywhere.herokuapp.com/${url}`)
-      .then(R.prop('data'))
-      .then(beautify);
+    return parser.parseURL(`${CORS_PROXY}?${url}`);
   },
 };

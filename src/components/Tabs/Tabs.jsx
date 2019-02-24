@@ -1,10 +1,12 @@
 import React from 'react';
 import {
-  Tab, TabList, TabPanel, Tabs as TabsContainer,
+  Tab,
+  TabList,
+  TabPanel,
+  Tabs as TabsContainer,
 } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import serialize from 'form-serialize';
 import Cookies from 'js-cookie';
 import nanoid from 'nanoid';
 import * as R from 'ramda';
@@ -13,11 +15,13 @@ import 'rc-dialog/assets/bootstrap.css';
 
 import apiClient from '../../utils/apiClient';
 import patchSetState from '../../utils/patchSetState';
+import rssService from '../../utils/rssService';
 
 class Tabs extends React.Component {
   constructor(props) {
     super(props);
     this.handleRemoveTab = R.curryN(2, this.handleRemoveTab);
+    this.containerRef = React.createRef();
 
     patchSetState(this);
 
@@ -25,6 +29,7 @@ class Tabs extends React.Component {
       showModal: false,
       loading: false,
       hasError: false,
+      rssUrl: '',
       tabIndex: this.getSavedIndex(),
       tabs: [
         { title: 'Tab 1', content: 'Content 1', uid: nanoid() },
@@ -73,25 +78,21 @@ class Tabs extends React.Component {
     this.setSavedIndex(tabIndex);
   };
 
-  showError = () => {
+  setError = () => {
     this.setState({ hasError: true });
   };
 
-  hideError = () => {
+  removeError = () => {
     this.setState({ hasError: false });
   };
 
-  showLoader = () => {
-    this.setState({ loading: true });
-  };
-
-  hideLoader = () => {
-    this.setState({ loading: false });
+  toggleLoading = (loading) => {
+    this.setState({ loading });
   };
 
   closeModal = () => {
-    this.hideError();
-    this.hideLoader();
+    this.removeError();
+    this.toggleLoading(false);
     this.setState({ showModal: false });
   };
 
@@ -113,17 +114,17 @@ class Tabs extends React.Component {
 
   handleFormSubmit = async (e) => {
     e.preventDefault();
-    this.showLoader();
-    const { rss: rssLink } = serialize(e.target, { hash: true });
+    this.toggleLoading(true);
+    const { rssUrl } = this.state;
     try {
-      const rss = await apiClient.getRssFeed(rssLink);
-      this.addTab(rssLink, rss);
+      const rss = await apiClient.getRssFeed(rssUrl);
+      this.addTab(rssService.description(rss), rssService.items(rss));
       this.closeModal();
     } catch (error) {
-      this.showError();
+      this.setError();
       throw new Error(error);
     } finally {
-      this.hideLoader();
+      this.toggleLoading(false);
     }
   };
 
@@ -135,12 +136,28 @@ class Tabs extends React.Component {
 
   renderTabContents = tabs => tabs.map(({ content, uid }) => (
     <TabPanel data-test="tab-content" key={uid}>
-      <pre>
-        <code>{content}</code>
-      </pre>
+      {this.renderItemList(content)}
       {this.renderRemoveButton(uid)}
     </TabPanel>
   ));
+
+  renderItemList = (content) => {
+    if (R.is(String, content)) return content;
+    return (
+      <ul className="list-group">
+        {content.map(el => (
+          <li className="list-group-item" key={rssService.itemTitle(el)}>
+            {rssService.itemTitle(el)}
+            {rssService.itemCategories(el).map(c => (
+              <span className="badge badge-dark" key={c}>
+                {c}
+              </span>
+            ))}
+          </li>
+        ))}
+      </ul>
+    );
+  };
 
   renderRemoveButton = uid => (
     <button type="button" onClick={this.handleRemoveTab(uid)} data-test="tab-remove-button">
@@ -149,7 +166,7 @@ class Tabs extends React.Component {
   );
 
   renderModal = () => {
-    const { showModal, loading } = this.state;
+    const { showModal, loading, rssUrl } = this.state;
     return (
       <Modal
         visible={showModal}
@@ -159,25 +176,36 @@ class Tabs extends React.Component {
         animation="slide-fade"
         maskAnimation="fade"
         onClose={this.closeModal}
+        getContainer={() => this.containerRef.current}
       >
-        <form onSubmit={this.handleFormSubmit}>
-          <div className="form-group">
-            <input
-              required
-              type="url"
-              className="form-control"
-              id="rssInput"
-              name="rss"
-              aria-describedby="rss link"
-              placeholder="Enter rss feed link"
-            />
-          </div>
-          {this.renderError()}
-          <button type="submit" className="btn btn-primary" disabled={loading}>
-            {this.renderLoader()}
-            СОБМИТ
-          </button>
-        </form>
+        <div role="dialog" data-test={`tab-modal-show-${showModal}`} aria-modal={showModal}>
+          <form onSubmit={this.handleFormSubmit} data-test="tab-modal-form">
+            <div className="form-group">
+              <input
+                value={rssUrl}
+                onChange={e => this.setState({ rssUrl: e.target.value })}
+                required
+                type="url"
+                className="form-control"
+                id="rssInput"
+                name="rss"
+                aria-describedby="rss link"
+                placeholder="Enter rss feed link"
+                data-test="tab-rss-input"
+              />
+            </div>
+            {this.renderError()}
+            <button
+              data-test="tab-modal-submit-button"
+              type="submit"
+              className="btn btn-primary"
+              disabled={loading}
+            >
+              {this.renderLoader()}
+              СОБМИТ
+            </button>
+          </form>
+        </div>
       </Modal>
     );
   };
@@ -201,7 +229,7 @@ class Tabs extends React.Component {
   render() {
     const { tabs, tabIndex } = this.state;
     return (
-      <>
+      <div ref={this.containerRef}>
         <button type="button" onClick={this.handleAddTab} data-test="tab-add-button">
           Add tab
         </button>
@@ -214,7 +242,7 @@ class Tabs extends React.Component {
           {this.renderTabContents(tabs)}
         </TabsContainer>
         {this.renderModal()}
-      </>
+      </div>
     );
   }
 }

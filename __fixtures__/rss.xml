@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"  >
+  <channel>
+    <title>Лучшие публикации за сутки</title>
+    <link>https://habr.com/ru/top/daily/</link>
+    <description><![CDATA[Лучшие публикации за последние 24 часа]]></description>
+    <language>ru</language>
+    <managingEditor>editor@habr.com</managingEditor>
+    <generator>habr.com</generator>
+    <pubDate>Sun, 24 Feb 2019 12:47:00 GMT</pubDate>
+    <lastBuildDate></lastBuildDate>
+      <image>
+        <link>https://habr.com/ru/</link>
+        <url>https://habr.com/images/logo.png</url>
+        <title>Хабр</title>
+      </image>
+
+              <item>
+      <title><![CDATA[Загоризонтный Дятел: недолгая история объекта «Чернобыль-2»]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/351212/</guid>
+      <link>https://habr.com/ru/post/351212/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=351212</link>
+      <description><![CDATA[<div style="text-align:center;"><img src="https://habrastorage.org/getpro/habr/post_images/0fd/feb/ac7/0fdfebac7d64631b360e53ad31182614.png" width="400"></div><br>
+С лета 1976-го коротковолновую связь по всему миру начал терроризировать «эфирный хулиган». На ряде частот, выделенных для гражданской связи и авиации, поселился характерный стучащий сигнал с частотой 10 импульсов в секунду, мешающий переговорам и трансляциям во множестве стран. Этот стук доводил до белого каления как радиолюбителей, так и тех, для кого радиосвязь была профессиональным инструментом. Судите сами:<br>
+<br>
+<a href="https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Woodpecker.ogg"> https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Woodpecker.ogg</a><br>
+<br>
+Причём сигнал был «плавающий» — поработав несколько минут на одной частоте, он переходил на другую. Загадочность и создаваемые неудобства привели к тому, что военные ряда стран попытались запеленговать источник. Оказалось, что он расположен в глубине Советского Союза. А поскольку сигнал — к тому времени получивший прозвище «Русский Дятел», — периодически вторгался на частоты, зарезервированные для авиации, этим не замедлили воспользоваться США, Великобритания и Канада, заявившие СССР протест. СССР сделал удивлённое лицо и ответил, что ничего не знает ни о каком сигнале.<br> <a href="https://habr.com/ru/post/351212/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=351212#habracut">Читать дальше →</a>]]></description>
+
+      <pubDate>Sat, 23 Feb 2019 12:24:55 GMT</pubDate>
+      <dc:creator>Barrayar</dc:creator>
+      <category><![CDATA[Блог компании Mail.ru Group]]></category><category><![CDATA[Научно-популярное]]></category><category><![CDATA[Старое железо]]></category><category><![CDATA[Читальный зал]]></category>
+      <category><![CDATA[чернобыль-2]]></category><category><![CDATA[загоризонтная РЛС]]></category>
+    </item>
+
+
+
+
+
+
+
+      <item>
+      <title><![CDATA[YouTube отключил рекламу антивакцинаторам]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441442/</guid>
+      <link>https://habr.com/ru/post/441442/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441442</link>
+      <description><![CDATA[<img src="https://habrastorage.org/getpro/habr/post_images/bfd/ae7/e08/bfdae7e0888a3310551bbc9f1c9a9169.jpg" align="left" width="300">Месяц назад YouTube <a href="https://habr.com/ru/post/437572/">объявил</a>, что планирует исключить из списка рекомендаций видео с теориями заговоров. С одной стороны, это нарушает свободу слова. С другой стороны, YouTube имеет право устанавливать свои правила, поскольку это коммерческий сервис.<br>
+<br>
+Сейчас компания подтвердила свою линию и пошла ещё дальше. Она вообще <a href="https://www.buzzfeednews.com/article/carolineodonovan/youtube-just-demonetized-anti-vax-channels">отключила рекламу на каналах, посвящённых вреду вакцин и прививок</a>. Согласно заявлению YouTube, данные материалы нарушают <a href="https://support.google.com/youtube/answer/6162278">правила</a>, запрещающие монетизацию видео с «опасным и вредным» контентом. <br>
+<br>
+Таким образом, «антивакцинаторы» теряют важный источник финансирования и есть надежда, что некоторые из них свернут свою деятельность.<br> <a href="https://habr.com/ru/post/441442/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441442#habracut">Читать дальше →</a>]]></description>
+
+      <pubDate>Sat, 23 Feb 2019 16:49:13 GMT</pubDate>
+      <dc:creator>alizar</dc:creator>
+      <category><![CDATA[Научно-популярное]]></category><category><![CDATA[Социальные сети и сообщества]]></category>
+      <category><![CDATA[YouTube]]></category><category><![CDATA[антивакцинаторство]]></category><category><![CDATA[цензура]]></category>
+    </item>
+
+
+
+
+
+
+
+
+
+
+
+    <item>
+      <title><![CDATA[[Перевод] Шесть историй, как код переписали с нуля]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441456/</guid>
+      <link>https://habr.com/ru/post/441456/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441456</link>
+      <description><![CDATA[<i>Новый взгляд на извечный вопрос: следует ли переписывать приложение с нуля или это «самая худшая стратегическая ошибка, которую может сделать разработчик программного обеспечения»? Оказывается, при работе со зрелой кодовой базой есть более двух вариантов ответа.</i> <br>
+<br>
+<img src="https://habrastorage.org/getpro/habr/post_images/ae7/eaf/3d0/ae7eaf3d09b8e2cb56410d53535083ef.jpg"><br>
+<br>
+<blockquote>«Исходный код словно <b>заржавел</b>!» — Джоэл Спольски</blockquote> <br>
+Почти два десятилетия назад <a href="https://medium.com/@spolsky">Джоэл Спольски</a> устроил разнос Netscape за то, что она переписала кодовую базу браузера, в своём эпохальном эссе <a href="https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/">«Чего никогда нельзя делать»</a>. Он пришёл к выводу, что <b>функционирующий софт абсолютно никогда не следует переписывать с нуля</b>. У него было два основных аргумента:<br>
+<br>
+<ul>
+<li>Кажущиеся мусором части кодовой базы часто включают в себя трудом заработанные знания о пограничных ситуациях и странных ошибках.<br>
+</li>
+<li>Полная переделка — длительное предприятие, которое отвлекает от улучшения существующего продукта, что даёт козыри конкурентам.</li>
+</ul> <a href="https://habr.com/ru/post/441456/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441456#habracut">Читать дальше →</a>]]></description>
+
+      <pubDate>Sat, 23 Feb 2019 18:47:28 GMT</pubDate>
+      <dc:creator>m1rko</dc:creator>
+      <category><![CDATA[Open source]]></category><category><![CDATA[История IT]]></category><category><![CDATA[Проектирование и рефакторинг]]></category><category><![CDATA[Управление продуктом]]></category><category><![CDATA[Управление проектами]]></category>
+      <category>Джоэл Спольски</category><category>Netscape</category><category>Mozilla</category><category>Firefox</category><category>Basecamp</category><category>золотые наручники</category><category>VS Code</category><category>Visual Studio</category><category>Gmail</category><category>Inbox</category><category>FogBugz</category><category>Trello</category><category>Wasabi</category><category>Glitch</category><category>FreshBooks</category><category>BillSpring</category><category>Lean UX</category>
+    </item>
+
+
+
+
+
+    <item>
+      <title><![CDATA[[Из песочницы] На пальцах: ассоциированные типы в Rust и в чём их отличие от аргументов типов]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441444/</guid>
+      <link>https://habr.com/ru/post/441444/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441444</link>
+      <description><![CDATA[<p>Для чего в Rust есть ассоциированные типы (associated types), и в чём их отличие от аргументов типов (type arguments aka generics), ведь они так похожи? Разве недостаточно только последних, как во всех нормальных языках? У тех, кто только начинает изучать Rust, а особенно у людей, пришедших из других языков (&quot;Это же дженерики!&quot; — скажет умудрённый годами джавист), такой вопрос возникает регулярно. Давайте разбираться.</p><br/>
+<p>TL;DR Первые контролирует вызываемый код, вторые — вызывающий.</p> <a href="https://habr.com/ru/post/441444/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441444#habracut">Научите меня плохому!</a>]]></description>
+
+      <pubDate>Sat, 23 Feb 2019 16:48:54 GMT</pubDate>
+      <dc:creator>tongohiti</dc:creator>
+      <category><![CDATA[Rust]]></category><category><![CDATA[Программирование]]></category>
+      <category>rust</category><category>generics</category><category>traits</category><category>type argument</category><category>associated type</category>
+    </item>
+
+
+
+
+
+
+
+	<item>
+		<title><![CDATA[12-летний подросток провёл реакцию ядерного синтеза в домашней лаборатории]]></title>
+    <guid isPermaLink="true">https://habr.com/ru/post/441488/</guid>
+		<link>https://habr.com/ru/post/441488/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441488</link>
+		<description><![CDATA[<img src="https://habrastorage.org/getpro/habr/post_images/692/6e5/a5e/6926e5a5ed267325d00d441fa354e59b.jpg"><br>
+<i><font color="gray">Джексон Освальт</font></i><br>
+<br>
+На форуме любителей ядерной физики Fusor.net о своих достижениях <a href="http://www.fusor.net/board/viewtopic.php?t=12115#p78866">отчитался</a> Джексон Освальт из города Мемфис, шт. Теннесси. Для своей детской лаборатории парень закупил оборудования на $10 000 и стал самым молодым физиком в мире, который осуществил реакцию ядерного синтеза в домашней лаборатории.<br> <a href="https://habr.com/ru/post/441488/#habracut">Читать дальше →</a>]]></description>
+
+		<pubDate>Sun, 24 Feb 2019 07:09:16 GMT</pubDate>
+    <dc:creator>alizar</dc:creator>
+		<category><![CDATA[Научно-популярное]]></category><category><![CDATA[Физика]]></category>
+		<category><![CDATA[ядерная реакция]]></category><category><![CDATA[дейтерий]]></category>
+	</item>
+
+
+
+
+
+
+
+
+
+    <item>
+      <title><![CDATA[[Перевод] Невозможная сковорода и другие победы плиток Пенроуза]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441448/</guid>
+      <link>https://habr.com/ru/post/441448/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441448</link>
+      <description><![CDATA[<div style="text-align:center;"><img src="https://habrastorage.org/getpro/habr/post_images/6c5/7d0/e88/6c57d0e887cce7f88dc70c1251f8ae8f.png" alt="image"></div><br>
+В 1974 году британский математик Роджер Пенроуз создал революционный набор плиток, который можно использовать для заполнения бесконечной плоскости никогда не повторяющимся узором. В 1982 году израильский кристаллограф Даниэль Шехтман открыл металлический сплав, атомы которого были выстроены в порядке, никогда ранее не встречавшемся в материаловедении. Пенроуз достиг масштабного общественного признания, редко достающегося математикам. Шехтман получил Нобелевскую премию. Оба учёных бросили вызов человеческой интуиции и изменили основы понимания структуры природы, обнаружив, что бесконечная вариативность может возникать даже в высокоупорядоченной среде.<br> <a href="https://habr.com/ru/post/441448/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441448#habracut">Читать дальше →</a>]]></description>
+
+      <pubDate>Sun, 24 Feb 2019 07:01:34 GMT</pubDate>
+      <dc:creator>PatientZero</dc:creator>
+      <category><![CDATA[Математика]]></category><category><![CDATA[Научно-популярное]]></category><category><![CDATA[Физика]]></category>
+      <category>мозаика пенроуза</category><category>плитки пенроуза</category><category>апериодический порядок</category><category>квазикристаллы</category><category>материаловедение</category>
+    </item>
+
+
+
+      <item>
+      <title><![CDATA[[спойлеры] Фильм Wandering Earth: Солнцу кранты. Всех спасут китайцы и один русский космонавт с флягой водки]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441330/</guid>
+      <link>https://habr.com/ru/post/441330/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441330</link>
+      <description><![CDATA[<blockquote><i>«Сначала неизбежно идут мысль, фантазия, сказка; за ними шествует научный расчет и, в конце концов, исполнение венчает мысль.»</i> <br>
+ — К.Э. Циолковский</blockquote><br>
+<br>
+Китайцы сняли научно-фантастический фильм по роману автора, который написал "<a href="https://habr.com/ru/post/394009/">Задачу трёх тел</a>". И собираются рвать мировой прокат.<br>
+<br>
+<img src="https://habrastorage.org/getpro/habr/post_images/ffe/520/eaf/ffe520eafbfe8d31473b9ed546356c39.webp" alt="image"><br>
+<br>
+В Интрестелларе «план А» по спасению человечества (перемещение планеты) был уткой, а для китайцев — руководством к действию. Построили 10 000 движков высотой 11 км каждый, общей тягой 150 триллионов чего-то там, и начали разбег. Но во время гравитационного маневра вокруг Юпитера что-то пошло не так…<br>
+<br>
+Фильм есть на пиратской бухте, а под катом предлагаю обсудить то, как китайцы видят технологии будущего: скафандры, экзоскелеты и ракетные движки и пр.<br>
+<br>
+Кто смотрел/читал — дополняйте и подключайтесь к обсуждению.<br>
+<br>
+<img src="https://habrastorage.org/webt/ei/1h/ub/ei1hubcbgnwa9e_kfzl_cdxsy2c.jpeg" alt="image"><br> <a href="https://habr.com/ru/post/441330/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441330#habracut">Читать дальше →</a>]]></description>
+
+      <pubDate>Sat, 23 Feb 2019 21:04:39 GMT</pubDate>
+      <dc:creator>MagisterLudi</dc:creator>
+      <category><![CDATA[Будущее здесь]]></category><category><![CDATA[Космонавтика]]></category><category><![CDATA[Научная фантастика]]></category><category><![CDATA[Научно-популярное]]></category><category><![CDATA[Читальный зал]]></category>
+      <category><![CDATA[космос]]></category><category><![CDATA[Китай]]></category><category><![CDATA[русские в космосе непобедимы]]></category><category><![CDATA[будущее]]></category><category><![CDATA[Лю Цысинь]]></category>
+    </item>
+
+
+
+
+
+
+
+
+
+
+
+    <item>
+      <title><![CDATA[[Перевод] Учёные вырастили универсальные стволовые клетки при помощи CRISPR инженерии]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441436/</guid>
+      <link>https://habr.com/ru/post/441436/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441436</link>
+      <description><![CDATA[<img src="https://habrastorage.org/webt/zh/jj/un/zhjjunnpwocrpbhqrpxsrenc0_u.jpeg"> <br>
+<br>
+<i>Клетки сердечной мышцы человека, полученные из новых универсальных стволовых клеток</i> <br>
+<br>
+<blockquote>Учёные из <a href="https://www.ucsf.edu">University of California San Francisco</a> впервые вырастили универсальные стволовые клетки, используя технологию редактирования генов CRISPR в целях получения плюрипотентных стволовых клеток, которые могут быть трансплантированы любому пациенту, не вызывая иммунной реакции.</blockquote> Плюрипотентные стволовые клетки – это клетки, способные стать клетками любого типа, которые нужны организму. Чуть более десяти лет назад революционный прогресс показал, как полностью сформированные взрослые клетки могут эффективно превращаться в плюрипотентные стволовые клетки. Эти индуцированные плюрипотентные стволовые клетки (iPSC) обещали изменить регенеративную медицину, но клинические применения были мало успешным. <br> <a href="https://habr.com/ru/post/441436/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441436#habracut">Читать дальше →</a>]]></description>
+
+      <pubDate>Sat, 23 Feb 2019 16:35:25 GMT</pubDate>
+      <dc:creator>arielf</dc:creator>
+      <category><![CDATA[Биотехнологии]]></category><category><![CDATA[Здоровье гика]]></category><category><![CDATA[Научно-популярное]]></category><category><![CDATA[Будущее здесь]]></category>
+      <category>sens</category><category>биоинженерия</category><category>омолаживающие биотехнологии</category><category>омоложение</category><category>регенеративная медицина</category><category>регенерация</category><category>стволовые клетки</category>
+    </item>
+
+
+
+      <item>
+      <title><![CDATA[Механизированные руки и манипуляторы — рассказываем, чем занимается лаборатория робототехники Университета ИТМО]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441458/</guid>
+      <link>https://habr.com/ru/post/441458/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441458</link>
+      <description><![CDATA[В Университете ИТМО на базе кафедры систем управления и информатики (СУиИ) открыта лаборатория робототехники. Расскажем о проектах, над которыми трудятся в её стенах, и покажем инструментарий: промышленных роботов-манипуляторов, робототехнические захватные устройства, а также установку для проведения испытаний систем динамического позиционирования с использованием роботизированной модели надводного судна.<br>
+<br>
+<a href="https://habr.com/ru/company/spbifmo/blog/441458/"><img src="https://habrastorage.org/webt/rp/0w/hq/rp0whqrwfz3vrhxnflcgel-rass.jpeg"></a> <a href="https://habr.com/ru/post/441458/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441458#habracut">Читать дальше →</a>]]></description>
+
+      <pubDate>Sat, 23 Feb 2019 18:15:59 GMT</pubDate>
+      <dc:creator>itmo</dc:creator>
+      <category><![CDATA[Блог компании Университет ИТМО]]></category><category><![CDATA[Производство и разработка электроники]]></category><category><![CDATA[Разработка робототехники]]></category><category><![CDATA[Учебный процесс в IT]]></category><category><![CDATA[Электроника для начинающих]]></category>
+      <category><![CDATA[Университет ИТМО]]></category><category><![CDATA[робототехника]]></category><category><![CDATA[СУиИ]]></category><category><![CDATA[платформа Стюарта]]></category><category><![CDATA[KUKA youBot]]></category><category><![CDATA[FESTO Robot Vision Cell]]></category>
+    </item>
+
+
+
+
+
+
+
+
+
+    <item>
+      <title><![CDATA[[Из песочницы] А каким IT-образование видите Вы?]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441460/</guid>
+      <link>https://habr.com/ru/post/441460/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441460</link>
+      <description><![CDATA[Студенты и преподаватели – люди совсем не похожие друг на друга. Одним хочется насладиться жизнью, а вторые постоянно этому мешают. Они заставляют каждые полгода вновь садиться, перечитывать лекции, не спать по несколько дней и вкалывать кофе внутривенно.<br/>
+<br/>
+Конечно люди разные, тут скорее говорится о стереотипах. Когда я был студентом никогда не думал, что стану преподавать, да и не думал, что пойду учиться в аспирантуру и вообще много чего не предполагал. Но и сидеть на рабочем месте по 8 часов в день, а затем приходить домой и продавливать диван – слишком скучно. Так ведь вся жизнь пройдет за просмотром очередного сезона «Игры престолов» или партией в «дотку». <br/>
+<br/>
+Мой стаж как преподавателя скромный – всего 2 года. Но за эти 2 года появился интересный опыт, которым захотелось поделиться. Статья получилась длинная и нетерпеливые могут заглянуть в самый конец, где приведен сухой остаток, полученный в результате проб и ошибок.<br/>
+ <a href="https://habr.com/ru/post/441460/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441460#habracut">Читать дальше &rarr;</a>]]></description>
+
+      <pubDate>Sat, 23 Feb 2019 18:11:06 GMT</pubDate>
+      <dc:creator>TemaTre</dc:creator>
+      <category><![CDATA[Карьера в IT-индустрии]]></category><category><![CDATA[Учебный процесс в IT]]></category>
+      <category>ооп головного мозга</category><category>молодой преподаватель</category><category>образование 2.0</category>
+    </item>
+
+
+
+
+
+      <item>
+      <title><![CDATA[НАСА предупреждает SpaceX и Boeing о недоработках в космических кораблях]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441454/</guid>
+      <link>https://habr.com/ru/post/441454/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441454</link>
+      <description><![CDATA[<img src="https://habrastorage.org/getpro/habr/post_images/2ea/282/3cc/2ea2823cc1e53ddba42ec19746699760.jpg"><br>
+<font color="gray">Космический корабль Crew Dragon (Источник: ТАСС)</font><br>
+<br>
+На днях агентство НАСА <a href="https://www.reuters.com/article/us-space-spacex-boeing-exclusive/exclusive-spacex-boeing-design-risks-threaten-new-delays-for-us-space-program-idUSKCN1QA0GU">вынесло</a> предупреждение как SpaceX так и Boeing о недоработках в космических кораблях этих компаний. Проблемы найдены как в общей конструкции, так и в системах обеспечения безопасности астронавтов. <br>
+<br>
+Агентство имеет полное право выносит предупреждения своим партнерам, поскольку обе компании работают с НАСА по контракту. SpaceX ранее получила $2,6 млрд, а Boeing — $4,2 млрд. Обе компании обязались разработать ракету и капсулу для того, чтобы США вновь получили возможность запускать астронавтов на МКС своими силами. Последний раз это было сделано в 2011 году. <br> <a href="https://habr.com/ru/post/441454/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441454#habracut">Читать дальше →</a>]]></description>
+
+      <pubDate>Sat, 23 Feb 2019 17:16:43 GMT</pubDate>
+      <dc:creator>marks</dc:creator>
+      <category><![CDATA[Космонавтика]]></category><category><![CDATA[Транспорт будущего]]></category>
+      <category><![CDATA[spacex]]></category><category><![CDATA[boeing]]></category><category><![CDATA[космическая  программа]]></category><category><![CDATA[корабли]]></category><category><![CDATA[освоение космоса]]></category>
+    </item>
+
+
+
+
+
+
+
+      <item>
+      <title><![CDATA[Топ-менеджера Apple обвинили в инсайдерской торговле. Он должен был с ней бороться]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441426/</guid>
+      <link>https://habr.com/ru/post/441426/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441426</link>
+      <description><![CDATA[<a href="https://habr.com/ru/company/iticapital/blog/441426/"><img src="https://habrastorage.org/webt/vg/hi/tt/vghittwcomwpv_u8rbqqg8cw4ns.jpeg"></a><br>
+<br>
+<i>Изображение: <a href="https://www.pexels.com/photo/5th-avenue-america-apple-store-architecture-279166/">Pexels</a></i><br>
+<br>
+Комиссия по ценным бумагам и биржам и министерство юстиции США выдвинули <a href="https://www.bloomberg.com/news/articles/2019-02-13/ex-top-apple-lawyer-levoff-accused-by-sec-of-insider-trading">обвинения</a> в инсайдерской торговле в адрес бывшего высокопоставленного сотрудника <a href="https://iticapital.ru/shares/american-shares/apple/buy-apple/">Apple</a>. Дэниел Левофф работал ведущим юристом компании и имел доступ к отчетности до ее публикации. <br>
+<br>
+Несмотря на то, что в обязанности Левоффа входила борьба с инсайдерской торговлей, он использовал доступную ему информацию для операций с акциями Apple. Например, перед публикацией отчета о снижении продаж iPhone Левофф продал акций на $10 млн. <a href="https://habr.com/ru/post/441426/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441426#habracut">Читать дальше →</a>]]></description>
+
+      <pubDate>Sat, 23 Feb 2019 15:21:03 GMT</pubDate>
+      <dc:creator>itinvest</dc:creator>
+      <category><![CDATA[Блог компании ITI Capital]]></category><category><![CDATA[Финансы в IT]]></category>
+      <category><![CDATA[Apple]]></category><category><![CDATA[инсайдерская торговля]]></category><category><![CDATA[акции]]></category><category><![CDATA[биржа]]></category>
+    </item>
+
+
+
+
+
+
+
+      <item>
+      <title><![CDATA[Кто разрабатывает 400GbE-коммутаторы для ЦОД]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/440510/</guid>
+      <link>https://habr.com/ru/post/440510/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=440510</link>
+      <description><![CDATA[В конце 2018 года сразу несколько производителей оборудования для ЦОД представили коммутаторы 400G Ethernet (400GbE). Расскажем об анонсе нового железа подробнее.<br>
+<br>
+<a href="https://habr.com/ru/company/it-grad/blog/440510/"><img src="https://habrastorage.org/webt/mv/0l/46/mv0l46nx1unsvkgwp6tl-dbxogq.jpeg"></a> <a href="https://habr.com/ru/post/440510/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=440510#habracut">Читать дальше →</a>]]></description>
+
+      <pubDate>Sat, 23 Feb 2019 19:16:27 GMT</pubDate>
+      <dc:creator>it_man</dc:creator>
+      <category><![CDATA[Блог компании ИТ-ГРАД]]></category><category><![CDATA[IT-инфраструктура]]></category>
+      <category><![CDATA[ит-град]]></category><category><![CDATA[it-grad]]></category><category><![CDATA[400gbe]]></category><category><![CDATA[коммутаторы]]></category><category><![CDATA[дата-центры]]></category>
+    </item>
+
+
+
+
+
+
+
+
+
+    <item>
+      <title><![CDATA[[Из песочницы] Как защититься от брендовых троллей]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441424/</guid>
+      <link>https://habr.com/ru/post/441424/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441424</link>
+      <description><![CDATA[<p><img src="https://habrastorage.org/webt/bl/uw/ib/bluwibz7b31d_xi3zptwkcsawl8.png"/><br/>
+<em><sub>Изображение взято из <a href="https://commons.wikimedia.org/wiki/File:Troll_Warning.jpg">Викимедии</a>, автор – Gil. Распространяется на условиях лицензии <a href="https://creativecommons.org/licenses/by/2.0/deed.en">Creative Commons Attribution 2.0 Generic license</a></sub></em></p><br/>
+<p>Привет, Хабр! Меня зовут Андрей, я юрист в сфере интеллектуальной собственности и IT-технологий.</p><br/>
+<p>Некоторое время назад на Хабре была <a href="https://habr.com/ru/post/435702/">опубликована</a> история <a href="https://habr.com/ru/users/andrei_mankevich/" class="user_link">andrei_mankevich</a> — автора мобильного приложения — реализации игры «Балда», которое было удалено по жалобе правообладателя соответствующего товарного знака. Судя по комментариям к этой истории, многим было интересно, можно ли как-то восстановить справедливость и наказать тролля.</p><br/>
+<p>В связи с этим я хочу рассказать о возможностях, которые предоставляет российский закон для защиты от таких действий.</p><br/>
+<p>На заметку: «патентные тролли» («patent troll») — это лица, осуществляющие покупку или регистрацию патента на изобретение, полезную модель или промышленный образец исключительно для того, чтобы требовать с других лиц вознаграждение за использование патента под угрозой предъявления судебного иска. Такие лица, как правило, не производят какой-либо полезный продукт на основании купленного патента.</p><br/>
+<p>В отношении лиц, осуществляющих аналогичную деятельность с товарными знаками и объектами авторских прав, используются, соответственно, термины «trademark troll» (можно перевести как «брендовый тролль») и «copyright troll» («копирайтный тролль», «копитролль»).<br/>
+Далее я буду говорить о брендовых троллях — лицах, которые регистрируют или покупают товарные знаки, для того чтобы заработать на предъявлении претензий и судебных исков.</p> <a href="https://habr.com/ru/post/441424/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441424#habracut">Читать дальше &rarr;</a>]]></description>
+
+      <pubDate>Sat, 23 Feb 2019 15:13:27 GMT</pubDate>
+      <dc:creator>alexeichuk</dc:creator>
+      <category><![CDATA[Законодательство в IT]]></category><category><![CDATA[Монетизация мобильных приложений]]></category><category><![CDATA[Патентование]]></category><category><![CDATA[Разработка игр]]></category><category><![CDATA[Разработка мобильных приложений]]></category>
+      <category>тролли</category><category>товарные знаки</category><category>бренд</category><category>мобильные приложения</category><category>недобросовестная конкуренция</category><category>google play</category><category>app store</category><category>суды</category><category>суд по интеллектуальным правам</category>
+    </item>
+
+
+
+
+
+      <item>
+      <title><![CDATA[Интерактивная игра на XSLT]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441478/</guid>
+      <link>https://habr.com/ru/post/441478/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441478</link>
+      <description><![CDATA[<img src="https://habrastorage.org/webt/dh/fa/ki/dhfaki02qcnjz62awuxjzoncne4.png" alt="image"><br>
+<br>
+Когда-то давным-давно придумали люди язык XML и увидели, что это хорошо. И стали использовать его везде, где можно, и даже там, где не следует. Форматы хранения и передачи данных, конфиги, веб-сервисы, базы данных… Казалось, оглянись вокруг — XML, XML повсюду. Время прошло, люди одумались, насочиняли разных других форматов данных (или спрятали XML внутри архивов) и XML-безумие как-бы приутихло. Но с тех славных пор практически любая система умеет в XML и интегрировать такие системы (кто сказал Apache Camel?) лучше и проще всего, используя XML-документы.<br>
+<br>
+А где XML, там и XSLT — язык, предназначенный для преобразования XML-документов. Язык этот специализированный, но обладает свойством <a href="https://www.unidex.com/turing/utm.htm">полноты по Тьюрингу</a>. Следовательно, язык пригоден для «ненормального» использования. Вот, например, существует <a href="https://habr.com/ru/post/203004/">решение задачи о 8 ферзях</a>. Значит, можно и игру написать.<br>
+<br>
+Для нетерпеливых: рабочая программа на <a href="https://jsfiddle.net/b2zft5cx/">JSFiddle</a>, исходники на <a href="https://github.com/yakov-bakhmatov/tic-tac-toe-xslt">GitHub</a>.<br> <a href="https://habr.com/ru/post/441478/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441478#habracut">Читать дальше →</a>]]></description>
+
+      <pubDate>Sun, 24 Feb 2019 02:24:26 GMT</pubDate>
+      <dc:creator>yakov-bakhmatov</dc:creator>
+      <category><![CDATA[XSLT]]></category><category><![CDATA[Ненормальное программирование]]></category>
+      <category><![CDATA[крестики-нолики]]></category><category><![CDATA[шарики за ролики]]></category><category><![CDATA[обещанного три года ждут]]></category>
+    </item>
+
+
+
+
+
+
+
+
+
+
+
+    <item>
+      <title><![CDATA[[Перевод] Какое лицо реально?]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441474/</guid>
+      <link>https://habr.com/ru/post/441474/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441474</link>
+      <description><![CDATA[<h4>Видеть сквозь иллюзии сфабрикованного мира</h4><br>
+<img src="https://habrastorage.org/webt/93/hn/gs/93hngstwowd4lq7lsk9hvzzvai0.png" align="left"> <br clear="right">
+<br clear="left">
+<i>«В интернете никто не знает, что ты собака»</i><br>
+<br>
+Так говорит собака, сидящая за компьютером на карикатуре Питера Штайнера в еженедельнике «Нью-Йоркер» 1993 года. Карикатура запечатлела радикальные изменения в характере человеческих взаимодействий, которые только начинались в 1993 году, изменения, которые не только радуют своими возможностями, но и пугают по той же причине.<br>
+<br>
+За последние четверть века мы все усвоили «урок собаки». Случайным незнакомцем в Интернете может быть кто угодно и где угодно. Опытный импресарио на музыкальном форуме может быть ребенком в подвале его мамы. Четырнадцатилетняя девушка в чате может быть полицейским под прикрытием. Африканская нефтяная наследница в твоих входящих сообщениях, несомненно, мошенница.<br>
+<br>
+Но в то время как мы научились не доверять именам и текстам, с изображениями всё по другому. Мы предполагаем, что изображение должно иметь реальный источник и мы склонны доверять изображениям. Бизнес-профиль с фотографией явно принадлежит кому-то. Человек на фотографии, на сайте знакомств, может оказаться на 10 килограмм тяжелее или на 10 лет старше, но если фотография есть, человек, очевидно, существует.<br>
+<br>
+Но это уже не так. Новые алгоритмы машинного обучения позволяют быстро создавать синтетические «фотографии» людей, которых никогда не было.<br>
+<br>
+Компьютеры хороши, но способность визуальной обработки вашего мозга еще лучше. Если вы знаете, что искать, вы можете заметить эти подделки одним взглядом (по крайней мере, на данный момент). Аппаратное и программное обеспечение, используемое для их генерации, будет продолжать совершенствоваться и может пройти всего несколько лет, пока люди не отстанут в этой гонке подделок и обнаружения.<br>
+<br>
+Наша цель — дать вам понять, с какой легкостью можно подделать цифровую личность, и помочь вам обнаружить эти подделки одним взглядом.<br> <a href="https://habr.com/ru/post/441474/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441474#habracut">Читать дальше →</a>]]></description>
+
+      <pubDate>Sun, 24 Feb 2019 01:47:43 GMT</pubDate>
+      <dc:creator>dedyshka</dc:creator>
+      <category><![CDATA[Будущее здесь]]></category><category><![CDATA[Искусственный интеллект]]></category><category><![CDATA[Машинное обучение]]></category>
+      <category>нейросети</category><category>машинное творчество</category><category>игры</category><category>мозг</category>
+    </item>
+
+
+
+      <item>
+      <title><![CDATA[С днем рождения, Сид Мейер‎]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/438730/</guid>
+      <link>https://habr.com/ru/post/438730/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=438730</link>
+      <description><![CDATA[24 февраля — день рождения легендарного разработчика игр. Ему стукнуло 65 лет. <br>
+<b>Поздравляем!</b><br>
+<br>
+<div style="text-align:center;"><img src="https://habrastorage.org/getpro/habr/post_images/8dc/a15/17e/8dca1517e4166f6e3577a505e627e602.jpg" alt="image"></div> <blockquote>«В течение всего долгого пути вы просто обречены на ошибки, и это хорошо», – говорит он. – «Нужно ошибаться и каждый раз извлекать из этого новый опыт. Нужно совершить несколько ошибок. Наверное, в этом весь секрет. У меня есть жёсткий диск, забитый прототипами, так и не прошедшими в стадию производства. Не всякая идея хороша, но вы должны учиться на своих ошибках больше, чем на успешных результатах. Так что будьте готовы к провалу, будьте готовы пробовать что-то новое и просто продолжайте делать игры. Мы падаем каждый день, но каждый раз вновь поднимаемся».</blockquote>Спасибо, Сид, за счастливое детство, когда с дискеты в оперативку 286-го загружали первую циву (не было HDD) и гоняли зулусов вместо написания программ на LOGO.<br>
+<br>
+Исчерпывающая биография Сида есть на <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%B5%D0%B9%D0%B5%D1%80,_%D0%A1%D0%B8%D0%B4">Википедии</a>. Я же подсуетился и собрал в одном месте все материалы про Сида Мейера на русском.<br> <a href="https://habr.com/ru/post/438730/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=438730#habracut">Читать дальше →</a>]]></description>
+
+      <pubDate>Sun, 24 Feb 2019 09:33:23 GMT</pubDate>
+      <dc:creator>MagisterLudi</dc:creator>
+      <category><![CDATA[Биографии гиков]]></category><category><![CDATA[Дизайн игр]]></category><category><![CDATA[История IT]]></category><category><![CDATA[Научно-популярное]]></category><category><![CDATA[Разработка игр]]></category>
+      <category><![CDATA[сид мейер]]></category><category><![CDATA[цивилизация]]></category><category><![CDATA[Civilization]]></category><category><![CDATA[геймдизайн]]></category>
+    </item>
+
+
+
+
+
+
+
+      <item>
+      <title><![CDATA[Сотрудники Microsoft выступили против использования HoloLens в армии, потому что война превращается в компьютерную игру]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441484/</guid>
+      <link>https://habr.com/ru/post/441484/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441484</link>
+      <description><![CDATA[<img src="https://habrastorage.org/getpro/habr/post_images/859/935/27d/85993527db3adc06e47fc29fadd0f63d.jpg"><br>
+<br>
+Как минимум 50 сотрудников Microsoft <a href="https://www.bbc.com/news/technology-47339774">подписали открытое письмо</a> к исполнительному директору Сатье Наделле и главному юрисконсульту Брэду Смиту с требованием отказаться от военного контракта с армией США: «Мы являемся глобальной коалицией работников Microsoft и отказываемся создавать технологии для войны и угнетения», — с таких слов начинается <a href="https://twitter.com/MsWorkers4/status/1099066343523930112">документ</a>. <br> <a href="https://habr.com/ru/post/441484/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441484#habracut">Читать дальше →</a>]]></description>
+
+      <pubDate>Sun, 24 Feb 2019 05:58:56 GMT</pubDate>
+      <dc:creator>alizar</dc:creator>
+      <category><![CDATA[AR и VR]]></category><category><![CDATA[Игры и игровые приставки]]></category>
+      <category><![CDATA[HoloLens]]></category><category><![CDATA[пацифизм]]></category><category><![CDATA[военные игры]]></category>
+    </item>
+
+
+
+
+
+
+
+
+
+
+
+    <item>
+      <title><![CDATA[[Перевод] Маркетинг в движении: год производства гифок]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441416/</guid>
+      <link>https://habr.com/ru/post/441416/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441416</link>
+      <description><![CDATA[Когда Банди с другом начинали работать над динамичным рогаликом Wizard of Legend, они понимали, что главная проблема — это недостаток опыта. У них не было связей, бюджета на маркетинг или экспертизы, которую могли бы использовать ветераны индустрии. Поэтому было важно начать рассказывать об игре как можно раньше. <br>
+<br>
+<img src="https://habrastorage.org/webt/hr/ff/1l/hrff1lrzbyikgetbdmgvj0l3spq.gif" alt="image"><br>
+<br>
+Они быстро поняли, что gif-изображения точнее передают динамику игры и лучше привлекают внимание людей. За год они узнали много нового о том, как сделать гифку убедительной. <br> <a href="https://habr.com/ru/post/441416/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441416#habracut">Читать дальше →</a>]]></description>
+
+      <pubDate>Sat, 23 Feb 2019 13:36:36 GMT</pubDate>
+      <dc:creator>HattoriHandzo</dc:creator>
+      <category><![CDATA[Продвижение игр]]></category><category><![CDATA[Разработка игр]]></category>
+      <category>gamedev</category><category>game development</category><category>gamedesign</category><category>gif</category>
+    </item>
+
+
+
+      <item>
+      <title><![CDATA[Возвращение блудного сына]]></title>
+      <guid isPermaLink="true">https://habr.com/ru/post/441414/</guid>
+      <link>https://habr.com/ru/post/441414/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441414</link>
+      <description><![CDATA[Эта история о том, как я строил мобильного робота платформу и о дальнейшей судьбе моего «NanoBot-a»…<br>
+<br>
+<img src="https://habrastorage.org/webt/5d/hk/n7/5dhkn7f78dbtip5kbbwczxdkcf0.jpeg"><br> <a href="https://habr.com/ru/post/441414/?utm_source=habrahabr&amp;utm_medium=rss&amp;utm_campaign=441414#habracut">Читать дальше →</a>]]></description>
+
+      <pubDate>Sat, 23 Feb 2019 12:56:27 GMT</pubDate>
+      <dc:creator>CybSys</dc:creator>
+      <category><![CDATA[DIY или Сделай сам]]></category><category><![CDATA[Разработка робототехники]]></category><category><![CDATA[Робототехника]]></category>
+      <category><![CDATA[Робот]]></category><category><![CDATA[робототехника]]></category><category><![CDATA[робототехника своими руками]]></category><category><![CDATA[робототехника и жизнь]]></category><category><![CDATA[NanoBot]]></category>
+    </item>
+
+
+
+
+
+
+
+
+
+
+
+  </channel>
+</rss>
