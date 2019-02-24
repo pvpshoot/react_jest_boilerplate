@@ -146,8 +146,12 @@ class Tabs extends React.Component {
     return (
       <ul className="list-group">
         {content.map(el => (
-          <li className="list-group-item" key={rssService.itemTitle(el)}>
-            {rssService.itemTitle(el)}
+          <li
+            data-test="tab-content-list-item"
+            className="list-group-item"
+            key={rssService.itemTitle(el)}
+          >
+            <span data-test="tab-content-list-item-title">{rssService.itemTitle(el)}</span>
             {rssService.itemCategories(el).map(c => (
               <span className="badge badge-dark" key={c}>
                 {c}

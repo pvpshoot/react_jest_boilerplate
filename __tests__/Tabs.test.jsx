@@ -1,10 +1,12 @@
 import React from 'react';
+import fs from 'fs';
 import { mount } from 'enzyme';
 import Cookie from 'js-cookie';
 import nock from 'nock';
 
 import App from '../src/components/App';
 import { CORS_PROXY } from '../src/utils/apiClient';
+import rssService from '../src/utils/rssService';
 
 jest.mock('js-cookie');
 
@@ -12,12 +14,13 @@ const tabNavContainerSelector = '[data-test="tab-anchor-container"]';
 const tabNavSelector = 'li[data-test="tab-anchor"]';
 const tabRemoveButtonSelector = '[data-test="tab-remove-button"]';
 const tabAddButtonSelector = '[data-test="tab-add-button"]';
-const tabAreaSelectedSelector = '[aria-selected="true"]';
 const tabContentSelector = 'div[data-test="tab-content"]';
 const tabModalSelector = '[data-test="tab-modal-show-true"]';
 const tabRssForm = '[data-test="tab-modal-form"]';
 const tabRssSubmitButton = '[data-test="tab-modal-submit-button"]';
 const tabRssInput = '[data-test="tab-rss-input"]';
+const tabContentListItem = '[data-test="tab-content-list-item"]';
+const tabContentListItemTitle = '[data-test="tab-content-list-item-title"]';
 
 const delay = t => new Promise((resolve) => {
   setTimeout(() => resolve(), t);
@@ -32,10 +35,13 @@ const createSelector = wrapper => ({
   getNavContainer: () => wrapper.find(tabNavContainerSelector),
   getFirstNavContainer: () => wrapper.find(tabNavContainerSelector).first(),
   getContentList: () => wrapper.find(tabContentSelector),
+  getLastContent: () => wrapper.find(tabContentSelector).last(),
   getModal: () => wrapper.find(tabModalSelector),
   getRssForm: () => wrapper.find(tabRssForm),
   getRssSubmitButton: () => wrapper.find(tabRssSubmitButton),
   getRssInput: () => wrapper.find(tabRssInput),
+  getNthContentListItem: n => wrapper.find(tabContentListItem).at(n),
+  getNthContentListItemItem: n => wrapper.find(tabContentListItemTitle).at(n),
 });
 
 describe('Tabs', () => {
@@ -51,29 +57,36 @@ describe('Tabs', () => {
 
   it('add tab', async () => {
     const mockUrl = 'https://habr.com/ru/';
+    const fixture = fs.readFileSync('__fixtures__/rss.xml', 'utf-8');
     const delayResponseTime = 2000;
     nock(`${CORS_PROXY}`)
       .defaultReplyHeaders({ 'access-control-allow-origin': '*' })
       .get(`/?${mockUrl}`)
       .delayBody(2000)
-      .replyWithFile(200, '__fixtures__/rss.xml');
+      .reply(200, fixture);
 
     const wrapper = mount(<App />);
     const s = createSelector(wrapper);
     const addButton = s.getAddButton();
+    expect(s.getLastAnchor()).not.toHaveProp('aria-selected', 'true');
 
     addButton.simulate('click');
     s.getRssInput().simulate('change', {
       target: { value: mockUrl },
     });
-
     s.getRssForm().simulate('submit');
+
     await delay(100);
     expect(s.getRssSubmitButton()).toHaveProp('disabled', true);
     await delay(delayResponseTime);
     wrapper.update();
     expect(s.getRssSubmitButton()).toHaveProp('disabled', false);
 
+    const parsedFixture = await rssService.parse(fixture);
+    const items = rssService.items(parsedFixture);
+    items.forEach((item, index) => {
+      expect(s.getNthContentListItemItem(index)).toHaveText(rssService.itemTitle(item));
+    });
     expect(s.getLastAnchor()).toHaveProp('aria-selected', 'true');
   });
 
