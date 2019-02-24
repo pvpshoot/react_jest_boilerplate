@@ -11,6 +11,9 @@
     "lint": "eslint ./src/",
     "build": "npm test && webpack --mode production"
   },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
   "jest": {
     "setupFilesAfterEnv": [
       "jest-enzyme"
@@ -37,12 +40,16 @@
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "@types/jest": "^24.0.6",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.1.0",
     "babel-loader": "^8.0.5",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^2.1.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.9.1",
@@ -65,8 +72,11 @@
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
     "debug": "^4.1.1",
+    "form-serialize": "^0.7.2",
     "js-cookie": "^2.2.0",
     "nanoid": "^2.0.1",
     "ramda": "^0.26.1",
@@ -75,6 +85,7 @@
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-router-dom": "^4.3.1",
-    "react-tabs": "^3.0.0"
+    "react-tabs": "^3.0.0",
+    "xml-beautifier": "^0.4.0"
   }
 }
