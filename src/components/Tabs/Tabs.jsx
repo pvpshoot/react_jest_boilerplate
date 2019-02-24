@@ -9,6 +9,7 @@ import 'react-tabs/style/react-tabs.css';
 import Cookies from 'js-cookie';
 import nanoid from 'nanoid';
 import * as R from 'ramda';
+import Modal from 'rc-dialog';
 
 import patchSetState from '../../utils/patchSetState';
 
@@ -20,6 +21,7 @@ class Tabs extends React.Component {
     patchSetState(this);
 
     this.state = {
+      showModal: true,
       tabIndex: this.getSavedIndex(),
       tabs: [
         { title: 'Tab 1', content: 'Content 1', uid: nanoid() },
@@ -101,6 +103,11 @@ class Tabs extends React.Component {
       remove this tab
     </button>
   );
+
+  renderModal = () => {
+    const { showModal } = this.state;
+    return <Modal visible={showModal} />;
+  };
 
   render() {
     const { tabs, tabIndex } = this.state;

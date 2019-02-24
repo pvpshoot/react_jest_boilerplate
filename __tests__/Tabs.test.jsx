@@ -6,22 +6,22 @@ import App from '../src/components/App';
 
 jest.mock('js-cookie');
 
-const TAB_NAV_CONTAINER_SELECTOR = '[data-test="tab-anchor-container"]';
-const TAB_NAV_SELECTOR = 'li[data-test="tab-anchor"]';
-const TAB_REMOVE_BUTTON_SELECTOR = '[data-test="tab-remove-button"]';
-const TAB_ADD_BUTTON_SELECTOR = '[data-test="tab-add-button"]';
-const TAB_AREA_SELECTED_SELECTOR = '[aria-selected="true"]';
-const TAB_CONTENT_SELECTOR = 'div[data-test="tab-content"]';
+const tabNavContainerSelector = '[data-test="tab-anchor-container"]';
+const tabNavSelector = 'li[data-test="tab-anchor"]';
+const tabRemoveButtonSelector = '[data-test="tab-remove-button"]';
+const tabAddButtonSelector = '[data-test="tab-add-button"]';
+const tabAreaSelectedSelector = '[aria-selected="true"]';
+const tabContentSelector = 'div[data-test="tab-content"]';
 
 const createSelector = wrapper => ({
-  getAnchorList: () => wrapper.find(TAB_NAV_SELECTOR),
-  getLastAnchor: () => wrapper.find(TAB_NAV_SELECTOR).last(),
-  getNthAnchor: n => wrapper.find(TAB_NAV_SELECTOR).at(n),
-  getRemoveButton: () => wrapper.find(TAB_REMOVE_BUTTON_SELECTOR),
-  getAddButton: () => wrapper.find(TAB_ADD_BUTTON_SELECTOR),
-  getNavContainer: () => wrapper.find(TAB_NAV_CONTAINER_SELECTOR),
-  getFirstNavContainer: () => wrapper.find(TAB_NAV_CONTAINER_SELECTOR).first(),
-  getContentList: () => wrapper.find(TAB_CONTENT_SELECTOR),
+  getAnchorList: () => wrapper.find(tabNavSelector),
+  getLastAnchor: () => wrapper.find(tabNavSelector).last(),
+  getNthAnchor: n => wrapper.find(tabNavSelector).at(n),
+  getRemoveButton: () => wrapper.find(tabRemoveButtonSelector),
+  getAddButton: () => wrapper.find(tabAddButtonSelector),
+  getNavContainer: () => wrapper.find(tabNavContainerSelector),
+  getFirstNavContainer: () => wrapper.find(tabNavContainerSelector).first(),
+  getContentList: () => wrapper.find(tabContentSelector),
   reloadApp: () => wrapper.unmount().mount(),
 });
 
@@ -30,11 +30,10 @@ describe('Tabs', () => {
     const TEST_INDEX = 2;
     const wrapper = mount(<App />);
     const s = createSelector(wrapper);
-    const tabAnchorList = s.getAnchorList();
-    const tabAnchor = tabAnchorList.at(TEST_INDEX);
+    const tabAnchor = s.getNthAnchor(TEST_INDEX);
 
     tabAnchor.simulate('click');
-    expect(s.getNthAnchor(TEST_INDEX)).toMatchSelector(TAB_AREA_SELECTED_SELECTOR);
+    expect(s.getNthAnchor(TEST_INDEX)).toHaveProp('aria-selected', 'true');
   });
 
   it('add tab', () => {
@@ -43,21 +42,36 @@ describe('Tabs', () => {
     const addButton = s.getAddButton();
 
     addButton.simulate('click');
-    expect(s.getLastAnchor()).toMatchSelector(TAB_AREA_SELECTED_SELECTOR);
+    expect(s.getLastAnchor()).toHaveProp('aria-selected', 'true');
   });
 
   it('reload with saved tab selected', () => {
     const TEST_INDEX = 2;
-    Cookie.get.mockImplementation(() => TEST_INDEX);
+    function CookieContainer() {
+      let selectedTab = TEST_INDEX;
+      return {
+        get() {
+          return selectedTab;
+        },
+        set(i) {
+          selectedTab = i;
+        },
+      };
+    }
+    const cooks = CookieContainer();
+    Cookie.set.mockImplementation((_, i) => cooks.set(i));
+    Cookie.get.mockImplementation(() => cooks.get());
 
     const wrapper = mount(<App />);
     const s = createSelector(wrapper);
+    expect(cooks.get()).toEqual(TEST_INDEX);
+    expect(s.getNthAnchor(TEST_INDEX)).toHaveProp('aria-selected', 'true');
+    s.getNthAnchor(TEST_INDEX - 1).simulate('click');
 
-    expect(s.getNthAnchor(TEST_INDEX)).toMatchSelector(TAB_AREA_SELECTED_SELECTOR);
-
-    Cookie.get.mockImplementation(() => TEST_INDEX - 1);
-    s.reloadApp();
-    expect(s.getNthAnchor(TEST_INDEX - 1)).toMatchSelector(TAB_AREA_SELECTED_SELECTOR);
+    const wrapper2 = mount(<App />);
+    const s2 = createSelector(wrapper2);
+    expect(cooks.get()).toEqual(TEST_INDEX - 1);
+    expect(s2.getNthAnchor(TEST_INDEX - 1)).toHaveProp('aria-selected', 'true');
   });
 
   it('remove tab', () => {
@@ -73,7 +87,7 @@ describe('Tabs', () => {
 
     expect(anchorsContainer).toContainMatchingElements(
       anchorsLengthAfterRemoveCount,
-      TAB_NAV_SELECTOR,
+      tabNavSelector,
     );
   });
 });
